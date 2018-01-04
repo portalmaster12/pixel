@@ -35,8 +35,21 @@ for l in txt:
 
 print(num)
 
+for l in num:
+    if l>15:
+        ml = [hexcode[15],hexcode[l-15]]
+    else:
+        ml = [hexcode[l],hexcode[0]]
+    #print(ml)
+    mul.append(''.join(ml))
+
+mul = ''.join(mul)
+
+j  = 6-(len(mul) % 6)
+mul = mul + ''.join(['0']*j)
 
 
+"""
 for l in (num):
     if l>15:
          if (l/2)*2==l:
@@ -60,7 +73,7 @@ for h in numd:
 
 print (numhex)
 
-
+"""
 
 
 
@@ -76,7 +89,7 @@ print (numhex)
 
 
         
-print (mul)
-print (numd)
-print (h)
-print (numhex)
+#print (mul)
+#print (numd)
+#print (h)
+#print (numhex)
